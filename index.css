@@ -88,7 +88,7 @@ header {
     ;
 }
 
-#cafes{
+#cafes {
     background-image: url("/assets/bg.div2.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ header {
     & .textos {
         color: #3c0e0e;
         display: flex;
-        justify-content: center;
+        align-items: center;
         flex-direction: column;
         text-align: center;
 
@@ -104,29 +104,29 @@ header {
             font-size: 40px;
             font-weight: 600;
 
-            & .detalhe {
-                width: 65;
-                height: 1px;
-                background-color: #3c0e0e;
-                margin-bottom: 16px;
-            }
+        }
 
-            & p {
-                width: 540px;
-                margin-bottom: 30px;
+        & .detalhe {
+            width: 65px;
+            height: 1px;
+            background-color: #3c0e0e;
+            margin-bottom: 16px;
+        }
 
+        & p {
+            width: 540px;
+            margin-bottom: 30px;
+        }
 
-            }
-
-            & a {
-                color: #3c0e0e;
-                font-weight: bold;
-            }
+        & a {
+            color: #000000;
+            font-weight: bold;
         }
 
     }
+
     & .grade {
-        display: grid; 
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 70px;
         padding: 0 110px;
@@ -135,33 +135,37 @@ header {
 
 
         & div {
-            
+
             display: flex;
             flex-direction: column;
             align-items: center;
             border-radius: 48px;
             color: #f7f2e8;
             padding: 25px 30px;
-            
-            &.cafe1{
+
+            &.cafe1 {
                 background: linear-gradient(202.65deg, #F6C7C5 4.72%, #C27D7A 102.83%);
             }
-            &.cafe2{
+
+            &.cafe2 {
                 background: linear-gradient(202.65deg, rgba(250, 250, 250, 0.95) 4.72%, rgba(84, 21, 17, 0.58) 102.83%);
             }
-            
-            &.cafe3{
-               background: linear-gradient(202.65deg, rgba(10, 9, 9, 0.95) 4.72%, rgba(84, 21, 17, 0.95) 102.83%);
+
+            &.cafe3 {
+                background: linear-gradient(202.65deg, rgba(10, 9, 9, 0.95) 4.72%, rgba(84, 21, 17, 0.95) 102.83%);
             }
-            & h3{
+
+            & h3 {
                 font-size: 20px;
                 margin-bottom: 10px;
             }
+
             & h2 {
                 font-size: 32px;
                 margin-bottom: 20px;
             }
-            & a{
+
+            & a {
                 display: block;
                 border-radius: 25px;
                 background-color: #f7f2e8;
@@ -173,8 +177,148 @@ header {
                 margin-top: 30px;
                 box-shadow: 0 8px 7px #00000025;
             }
-    
+
 
         }
     }
+
 }
+
+#receitas {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3c0e0e;
+
+    & span {
+        background-color: #ffffff;
+        line-height: 40px;
+        display: inline-block;
+        padding: 0 15px;
+        border-radius: 20px;
+        color: #f9c4c4;
+        font-weight: bold;
+    }
+
+    & h2 {
+        font-size: 80px;
+        font-weight: bold;
+        color: #3c0e0e;
+    }
+
+    & .detalhe {
+        width: 50px;
+        height: 1px;
+        background-color: #3c0e0e;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    & h3 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 16px;
+
+    }
+
+    & p {
+        color: #3c0e0e;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    & a {
+        color: #3c0e0e;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 16px;
+        margin-top: 100px;
+
+    }
+}
+ #delivery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 48px;
+        padding-radius: 30px;
+        width: 1115px;
+        height: 370px;
+        background-image:linear-gradient(#f3c7c4f2, #541511f2);
+        color: #fafafa;
+        text-align: right;
+        padding: 20px;
+
+        & img {
+            margin-top: -150px;
+        }
+
+        & h2 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        & p {
+            padding: 20px;
+        }
+
+        & a {
+            width: 280px;
+            line-height: 50px;
+            font-weight: bold;
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 25px;
+            display: inline-block;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 8px 7px;
+        }
+    }
+    
+#localização{
+        width: 1115px;
+        margin: 0 auto;
+        border-radius: 48px;
+        color: #ffffff;
+        display: flex;
+        background-image: linear-gradient(#541511a8, #f3c7c4);
+        padding-left: 40px;
+        position: relative;
+
+        & h1{
+            font-size: 80px;
+            line-height: 84px;
+        }
+        & h6{  width: 50px;
+            height: 1px;
+            background-color: #ffffff;
+            padding-bottom: 16px;
+
+        }
+        & p{
+            
+        }
+        & .detalhe2{
+            width: 50px;
+            height: 1px;
+            background-color: #ffffff;
+        }
+        & a{
+            width: 280px;
+            line
+        }
+        & img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(-50% ,50%);
+
+        }
+    }
